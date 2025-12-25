@@ -53,3 +53,7 @@ A weather application that provides current weather information for any city wor
 
 This application uses the OpenWeather API from openweathermap.org
 
+## Screenshot
+<img width="1193" height="697" alt="image" src="https://github.com/user-attachments/assets/60250596-db49-4932-834e-cb3e845ed5ab" />
+
+
