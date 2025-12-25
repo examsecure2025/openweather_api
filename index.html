@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OpenWeather</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+</head>
+<body class="openweather-body openweather-light">
+    <div class="openweather-container">
+        <div class="openweather-header">
+            <h1 class="openweather-title">
+                OpenWeather
+            </h1>
+            <button class="openweather-theme-toggle" id="openweatherThemeToggle">
+                <span id="openweatherThemeIcon">Dark</span>
+            </button>
+        </div>
+
+        <div class="openweather-wrapper">
+            <div class="openweather-controls">
+                <div class="openweather-search-container">
+                    <input 
+                        type="text" 
+                        class="openweather-search-input" 
+                        id="openweatherSearchInput" 
+                        placeholder="Enter city name"
+                    >
+                    <button class="openweather-btn openweather-btn-search" id="openweatherSearchBtn">
+                        Search
+                    </button>
+                </div>
+            </div>
+
+            <div class="openweather-error" id="openweatherError"></div>
+
+            <div class="openweather-loading" id="openweatherLoading" style="display: none;">
+                <div class="openweather-spinner"></div>
+                <p>loading weather data...</p>
+            </div>
+
+            <div class="openweather-results" id="openweatherResults"></div>
+        </div>
+
+        <div class="openweather-footer">
+            <p class="openweather-credits">
+                API Source: 
+                <a href="https://openweathermap.org/api" target="_blank">openweathermap.org</a>
+            </p>
+        </div>
+    </div>
+
+    <script src="config.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+
